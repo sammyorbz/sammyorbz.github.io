@@ -25,7 +25,7 @@ Here are a few examples of my work:
 ### 1. ** Cervical Cancer Awareness Improvement Analysis: Insights from a Pre- and Post-Education Study**
 *Power BI | Excel*  
 Created a visual report using Power BI desktop to evaluate the impact of a health education intervention on cervical cancer awareness among senior high school girls.
-[View Project →](#)
+[View Project →](https://github.com/sammyorbz/Cervical-Cancer-Awareness-Impact-Analysis.git)
 
 
 ---
