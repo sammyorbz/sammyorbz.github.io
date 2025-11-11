@@ -1,19 +1,15 @@
 title: "Samuel Nkrumah - Portfolio"
 description: "Data Analyst | Physician Assistant"
 baseurl: ""
-url: "https://sammyorbz.github.io"
+url: "https://yourusername.github.io"
 theme: minima
 
-# Enable support for Jekyll SEO
-plugins:
-  - jekyll-seo-tag
+# Include these to ensure assets work
+include:
+  - assets
 
 # Exclude from processing
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
