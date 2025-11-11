@@ -1,3 +1,8 @@
+---
+layout: default
+title: Samuel Nkrumah - Data Analyst | Physician Assistant
+---
+
 <style>
     * {
         margin: 0;
@@ -29,7 +34,7 @@
         right: 0;
         width: 50%;
         height: 100%;
-        background-image: url('https://i.ibb.co/0QfL9v3/Gemini-Generated-Image-kb5agvkb5agvkb5a.png');
+        background-image: url('/assets/images/Gemini_Generated_Image_kb5agvkb5agvkb5a.png);
         background-size: contain;
         background-position: right center;
         background-repeat: no-repeat;
@@ -196,10 +201,10 @@
     <header>
         <nav>
             <div class="nav-links">
-                <a href="#about">About Me</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <a href="/about">About Me</a>
+                <a href="/experience">Experience</a>
+                <a href="/projects">Projects</a>
+                <a href="/contact">Contact</a>
             </div>
         </nav>
     </header>
