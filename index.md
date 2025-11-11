@@ -1,8 +1,3 @@
----
-layout: default
-title: Samuel Nkrumah - Data Analyst | Physician Assistant
----
-
 <style>
     * {
         margin: 0;
@@ -26,15 +21,15 @@ title: Samuel Nkrumah - Data Analyst | Physician Assistant
         position: relative;
     }
 
-    /* Homepage Background Image */
-    .homepage-body::before {
+    /* Background Image */
+    body::before {
         content: '';
         position: fixed;
         top: 0;
         right: 0;
         width: 50%;
         height: 100%;
-        background-image: url('/assets/images/Gemini_Generated_Image_kb5agvkb5agvkb5a.png);
+        background-image: url('/assets/Gemini-Generated-Image-kb5agvkb5agvkb5a.png');
         background-size: contain;
         background-position: right center;
         background-repeat: no-repeat;
@@ -170,41 +165,21 @@ title: Samuel Nkrumah - Data Analyst | Physician Assistant
             max-width: 100%;
         }
 
-        /* Hide background image on mobile */
-        .homepage-body::before {
+        /* Hide background image on mobile or adjust */
+        body::before {
             display: none;
         }
     }
 </style>
 
-<script>
-    // Add homepage class to body
-    document.addEventListener('DOMContentLoaded', function() {
-        document.body.classList.add('homepage-body');
-        
-        // Simple animation on load
-        const greeting = document.querySelector('.greeting');
-        if (greeting) {
-            greeting.style.opacity = '0';
-            greeting.style.transform = 'translateY(20px)';
-            
-            setTimeout(() => {
-                greeting.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
-                greeting.style.opacity = '1';
-                greeting.style.transform = 'translateY(0)';
-            }, 300);
-        }
-    });
-</script>
-
 <div class="container">
     <header>
         <nav>
             <div class="nav-links">
-                <a href="/about">About Me</a>
-                <a href="/experience">Experience</a>
-                <a href="/projects">Projects</a>
-                <a href="/contact">Contact</a>
+                <a href="#about">About Me</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
         </nav>
     </header>
@@ -215,6 +190,7 @@ title: Samuel Nkrumah - Data Analyst | Physician Assistant
             <div class="name">Samuel Nkrumah</div>
             <div class="title">Data Analyst | Physician Assistant</div>
         </div>
+        <!-- Image removed from here since it's now a background -->
     </section>
 
     <div class="scroll-indicator">
@@ -222,3 +198,18 @@ title: Samuel Nkrumah - Data Analyst | Physician Assistant
         <i class="fas fa-chevron-down"></i>
     </div>
 </div>
+
+<script>
+    // Simple animation on load
+    document.addEventListener('DOMContentLoaded', function() {
+        const greeting = document.querySelector('.greeting');
+        greeting.style.opacity = '0';
+        greeting.style.transform = 'translateY(20px)';
+        
+        setTimeout(() => {
+            greeting.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            greeting.style.opacity = '1';
+            greeting.style.transform = 'translateY(0)';
+        }, 300);
+    });
+</script>
