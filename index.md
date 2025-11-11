@@ -1,7 +1,3 @@
----
-layout: default
-title: Samuel Nkrumah - Data Analyst | Physician Assistant
----
 
 <style>
     * {
@@ -23,6 +19,23 @@ title: Samuel Nkrumah - Data Analyst | Physician Assistant
         line-height: 1.6;
         overflow-x: hidden;
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        position: relative;
+    }
+
+    /* Background Image */
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background-image: url('https://i.ibb.co/0QfL9v3/Gemini-Generated-Image-kb5agvkb5agvkb5a.png');
+        background-size: contain;
+        background-position: right center;
+        background-repeat: no-repeat;
+        z-index: 1;
+        opacity: 1;
     }
 
     .container {
@@ -72,28 +85,7 @@ title: Samuel Nkrumah - Data Analyst | Physician Assistant
 
     .hero-content {
         flex: 1;
-        max-width: 60%;
-    }
-
-    .hero-image {
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 45%;
-        height: 80%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 1;
-    }
-
-    .hero-image img {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: contain;
-        filter: none;
-        opacity: 1;
+        max-width: 50%;
     }
 
     .greeting {
@@ -170,22 +162,13 @@ title: Samuel Nkrumah - Data Analyst | Physician Assistant
             font-size: 1.125rem;
         }
 
-        .hero {
-            flex-direction: column;
-        }
-
         .hero-content {
             max-width: 100%;
-            margin-bottom: 40px;
         }
 
-        .hero-image {
-            position: relative;
-            width: 100%;
-            height: auto;
-            top: auto;
-            transform: none;
-            margin-top: 40px;
+        /* Hide background image on mobile or adjust */
+        body::before {
+            display: none;
         }
     }
 </style>
@@ -208,9 +191,7 @@ title: Samuel Nkrumah - Data Analyst | Physician Assistant
             <div class="name">Samuel Nkrumah</div>
             <div class="title">Data Analyst | Physician Assistant</div>
         </div>
-        <div class="hero-image">
-            <img src="https://i.ibb.co/0QfL9v3/Gemini-Generated-Image-kb5agvkb5agvkb5a.png" alt="CANNOTCHING GAME MADE IN CHINA">
-        </div>
+        <!-- Image removed from here since it's now a background -->
     </section>
 
     <div class="scroll-indicator">
@@ -233,5 +214,3 @@ title: Samuel Nkrumah - Data Analyst | Physician Assistant
         }, 300);
     });
 </script>
-
-<!-- Add Font Awesome CDN in _includes/head.html or directly in config -->
