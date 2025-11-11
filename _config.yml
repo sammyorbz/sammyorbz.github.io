@@ -1,16 +1,19 @@
-# _config.yml
-title: Samuel Nkrumah # Your Name
-description: "Healthcare Data Specialist | Physician Assitant | Data Storyteller" # Your Tagline
-baseurl: "" # Leave this blank for a USERNAME.github.io repo
-url: "https://sammyorbz.github.io" # Replace with your actual GitHub username
+title: "Samuel Nkrumah - Portfolio"
+description: "Data Analyst | Physician Assistant"
+baseurl: ""
+url: "https://sammyorbz.github.io"
+theme: minima
 
-# The most important part: Choose a theme.
-# We'll use a popular, professional one for this example.
-remote_theme: pages-themes/minimal@v0.2.0
-
+# Enable support for Jekyll SEO
 plugins:
-  - jekyll-remote-theme # This tells Jekyll to use the remote theme
+  - jekyll-seo-tag
 
-# Your social links (edit these)
-github_username:  sammyorbz # Your GitHub handle without the @
-# You can add others like linkedin, twitter later.
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
