@@ -1,4 +1,3 @@
-
 <style>
     * {
         margin: 0;
@@ -22,8 +21,8 @@
         position: relative;
     }
 
-    /* Background Image */
-    body::before {
+    /* Homepage Background Image */
+    .homepage-body::before {
         content: '';
         position: fixed;
         top: 0;
@@ -166,12 +165,32 @@
             max-width: 100%;
         }
 
-        /* Hide background image on mobile or adjust */
-        body::before {
+        /* Hide background image on mobile */
+        .homepage-body::before {
             display: none;
         }
     }
 </style>
+
+<script>
+    // Add homepage class to body
+    document.addEventListener('DOMContentLoaded', function() {
+        document.body.classList.add('homepage-body');
+        
+        // Simple animation on load
+        const greeting = document.querySelector('.greeting');
+        if (greeting) {
+            greeting.style.opacity = '0';
+            greeting.style.transform = 'translateY(20px)';
+            
+            setTimeout(() => {
+                greeting.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                greeting.style.opacity = '1';
+                greeting.style.transform = 'translateY(0)';
+            }, 300);
+        }
+    });
+</script>
 
 <div class="container">
     <header>
@@ -191,7 +210,6 @@
             <div class="name">Samuel Nkrumah</div>
             <div class="title">Data Analyst | Physician Assistant</div>
         </div>
-        <!-- Image removed from here since it's now a background -->
     </section>
 
     <div class="scroll-indicator">
@@ -199,18 +217,3 @@
         <i class="fas fa-chevron-down"></i>
     </div>
 </div>
-
-<script>
-    // Simple animation on load
-    document.addEventListener('DOMContentLoaded', function() {
-        const greeting = document.querySelector('.greeting');
-        greeting.style.opacity = '0';
-        greeting.style.transform = 'translateY(20px)';
-        
-        setTimeout(() => {
-            greeting.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
-            greeting.style.opacity = '1';
-            greeting.style.transform = 'translateY(0)';
-        }, 300);
-    });
-</script>
